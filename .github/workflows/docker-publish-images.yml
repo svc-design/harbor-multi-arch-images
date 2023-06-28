@@ -74,16 +74,13 @@ jobs:
       matrix:
         component:
           - prepare
-          - db
           - portal
           - core
           - jobservice
           - log
-          - nginx
           - registryctl
           - notary
           - trivy_adapter
-          - redis
           - standalone_db_migrator
           - exporter
 
