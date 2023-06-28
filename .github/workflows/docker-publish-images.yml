@@ -16,16 +16,13 @@ jobs:
         component:
           - trivy-adapter
           - core
-          - db
           - exporter
           - jobservice
           - log
-          - nginx
           - notary-server
           - notary-signer
           - portal
           - prepare
-          - redis
           - registry
           - registryctl
 
