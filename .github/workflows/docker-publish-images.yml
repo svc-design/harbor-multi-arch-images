@@ -81,7 +81,6 @@ jobs:
           - registryctl
           - notary
           - trivy_adapter
-          - standalone_db_migrator
           - exporter
 
     defaults:
@@ -135,7 +134,6 @@ jobs:
             jobservice)             make compile_jobservice ${CTX};;
             registryctl)            make compile_registryctl ${CTX};;
             notary*)                make compile_notary_migrate_patch ${CTX} ;;
-            standalone_db_migrator) make compile_standalone_db_migrator ${CTX} ;;
           esac;
 
           case ${{ matrix.component }} in
